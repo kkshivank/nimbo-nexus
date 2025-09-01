@@ -1,0 +1,230 @@
+// "use client"
+
+// import { FloatingParticles } from "@/components/floating-particles"
+// import { WhyChooseUs } from "@/components/why-choose-us"
+// import { ProcessSteps } from "@/components/process-steps"
+// import { Button } from "@/components/ui/button"
+// import { useRouter } from "next/navigation"
+// import { Target, Eye, HeartHandshake } from "lucide-react"
+
+// export default function AboutPage() {
+//   const router = useRouter()
+
+//   return (
+//     <main>
+//       {/* Hero Section */}
+//       <section className="relative isolate overflow-hidden">
+//         <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-cyan-500 opacity-10" />
+//         <FloatingParticles />
+//         <div className="mx-auto max-w-6xl px-4 py-20 md:py-28 relative text-center">
+//           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+//             About Read-itsoft
+//           </h1>
+//           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+//             Driving digital transformation with innovation, collaboration, and excellence.
+//             We empower businesses to grow smarter and faster with cutting-edge technology.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* Mission / Vision / Values */}
+//       <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+//         <div className="grid gap-6 md:grid-cols-3">
+//           {[
+//             {
+//               title: "Mission",
+//               desc: "To deliver innovative, scalable, and secure IT solutions that accelerate digital transformation, unlock new opportunities, and create measurable business impact.",
+//               icon: <Target className="size-8 text-blue-600" />,
+//             },
+//             {
+//               title: "Vision",
+//               desc: "To be a globally trusted partner for enterprise-grade digital initiatives, empowering organizations to achieve operational excellence and sustainable growth.",
+//               icon: <Eye className="size-8 text-blue-600" />,
+//             },
+//             {
+//               title: "Values",
+//               desc: "Integrity, excellence, and collaboration define us. We place clients first, nurture continuous learning, and embrace innovation to deliver long-term value.",
+//               icon: <HeartHandshake className="size-8 text-blue-600" />,
+//             },
+//           ].map((item) => (
+//             <div
+//               key={item.title}
+//               className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 p-6 transition hover:shadow-xl"
+//             >
+//               <div className="flex items-center gap-3">
+//                 {item.icon}
+//                 <h2 className="font-semibold text-lg text-blue-600">{item.title}</h2>
+//               </div>
+//               <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{item.desc}</p>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+
+//       {/* Why Choose Us (Extended with visuals) */}
+//       <WhyChooseUs extended />
+
+//       {/* Our Process */}
+//       <ProcessSteps />
+
+//       {/* Call To Action */}
+//       <section className="relative mx-auto max-w-6xl px-4 py-20 text-center mb-4">
+//         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl opacity-10" />
+//         <div className="relative bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-10 md:p-16">
+//           <h2 className="text-3xl md:text-4xl font-bold">
+//             Ready to Transform Your Business?
+//           </h2>
+//           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+//             Let’s collaborate to build scalable, modern, and reliable technology solutions that drive measurable success.
+//           </p>
+//           <div className="mt-6">
+//             <Button
+//               size="lg"
+//               onClick={() => router.push("/contact")}
+//               className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:from-blue-700 hover:to-cyan-600"
+//             >
+//               Contact Us Today
+//             </Button>
+//           </div>
+//         </div>
+//       </section>
+//     </main>
+//   )
+// }
+
+"use client";
+
+import { FloatingParticles } from "@/components/floating-particles";
+import { WhyChooseUs } from "@/components/why-choose-us";
+import { ProcessSteps } from "@/components/process-steps";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { Target, Eye, HeartHandshake } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+export default function AboutPage() {
+  const router = useRouter();
+
+  return (
+    <main className="overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-cyan-500 opacity-10" />
+        <FloatingParticles />
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto max-w-6xl px-4 py-16 md:py-24 relative text-center"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            About Read-itsoft
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Driving digital transformation with innovation, collaboration, and excellence.  
+             We empower businesses to grow smarter and faster with cutting-edge technology.
+          </p>
+        </motion.div>
+      </section>
+      
+
+      {/* Mission / Vision / Values */}
+      <section className="mx-auto max-w-6xl px-4 py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 40 },
+            visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2 } },
+          }}
+          className="grid gap-8 md:grid-cols-3"
+        >
+          {[
+            {
+              title: "Mission",
+              desc: "Deliver innovative, scalable, and secure IT solutions that accelerate digital transformation, unlock new opportunities, and create measurable business impact.",
+              icon: <Target className="size-8 text-blue-600" />,
+              img: "https://media.licdn.com/dms/image/v2/D4E12AQHgMxo-g7BYsw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1658422953944?e=2147483647&v=beta&t=Z2tA86SPCvcG9ieACH8jr4SSL47dclFPchqYJIPI4gY",
+            },
+            {
+              title: "Vision",
+              desc: "To be a globally trusted partner for enterprise-grade digital initiatives, empowering organizations to achieve operational excellence and sustainable growth.",
+              icon: <Eye className="size-8 text-blue-600" />,
+              img: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_1/9653016/447231_712259.png",
+            },
+            {
+              title: "Values",
+              desc: "Integrity, excellence, and collaboration define us. We put clients first, embrace innovation, and nurture continuous learning to deliver long-term value.",
+              icon: <HeartHandshake className="size-8 text-blue-600" />,
+              img: "https://p-gpb8fhd4b9fbh6fy.z01.azurefd.net/cms/e6ba6aae-63bf-4023-8c3a-862466828e71/b3e7b1c4-025d-44a9-af65-b46ef7526fac-lg.jpg",
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={item.title}
+              className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 overflow-hidden hover:shadow-xl transition group"
+              variants={{
+                hidden: { opacity: 0, y: 40 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <div className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <div className="flex items-center gap-3">
+                  {item.icon}
+                  <h2 className="font-semibold text-lg text-blue-600">
+                    {item.title}
+                  </h2>
+                </div>
+                <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </section>
+
+      {/* Why Choose Us */}
+      <WhyChooseUs extended />
+
+      {/* Our Process */}
+      <ProcessSteps />
+
+      {/* Call To Action */}
+      <section className="mx-auto max-w-3xl px-4 py-12 text-center">
+      <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+        Let’s <span className="text-blue-600">Build Something</span> Great Together
+      </h2>
+      <p className="mt-2 text-gray-600 max-w-xl mx-auto">
+        Explore our services or get in touch — we’d love to hear from you.
+      </p>
+      <div className="mt-6 flex justify-center gap-4">
+        <button
+          onClick={() => router.push("/services")}
+          className="px-5 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+        >
+          View Services
+        </button>
+        <button
+          onClick={() => router.push("/contact")}
+          className="px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition"
+        >
+          Contact Us
+        </button>
+      </div>
+    </section>
+
+
+
+    </main>
+  );
+}
