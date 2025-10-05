@@ -20,7 +20,7 @@ export default function HomePage() {
         Driving <span className="text-blue-600">Digital Excellence</span>
       </h2>
       <p className="mt-4 text-gray-600 leading-relaxed">
-        At <span className="font-semibold text-gray-800">Read-itsoft</span>, we 
+        At <span className="font-semibold text-gray-800">Rextro IT</span>, we 
         empower organizations to <span className="font-semibold text-gray-800">modernize</span>, 
         <span className="font-semibold text-gray-800"> automate</span>, and 
         <span className="font-semibold text-gray-800"> scale</span> their operations.  

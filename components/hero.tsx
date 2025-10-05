@@ -17,7 +17,9 @@ export function Hero() {
             Empowering Businesses with Innovative IT Solutions
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Salesforce. AWS. Microsoft Power Platform. React. Web Development. Corporate Training.
+            Coding Dreams into Reality
+            <br />
+            Development • Training • Innovation
           </p>
           <div className="mt-6 flex items-center gap-3">
             <Button asChild className="bg-blue-600 hover:bg-blue-700">

@@ -22,7 +22,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
         <Link href="/" className="font-semibold text-xl tracking-tight">
-          <span className="text-blue-600">Read</span>-itsoft
+          <span className="text-blue-600 font-bold">Rextro</span> IT
           <span className="sr-only">Read-itsoft home</span>
         </Link>
 

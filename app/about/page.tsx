@@ -1,97 +1,3 @@
-// "use client"
-
-// import { FloatingParticles } from "@/components/floating-particles"
-// import { WhyChooseUs } from "@/components/why-choose-us"
-// import { ProcessSteps } from "@/components/process-steps"
-// import { Button } from "@/components/ui/button"
-// import { useRouter } from "next/navigation"
-// import { Target, Eye, HeartHandshake } from "lucide-react"
-
-// export default function AboutPage() {
-//   const router = useRouter()
-
-//   return (
-//     <main>
-//       {/* Hero Section */}
-//       <section className="relative isolate overflow-hidden">
-//         <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-cyan-500 opacity-10" />
-//         <FloatingParticles />
-//         <div className="mx-auto max-w-6xl px-4 py-20 md:py-28 relative text-center">
-//           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-//             About Read-itsoft
-//           </h1>
-//           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-//             Driving digital transformation with innovation, collaboration, and excellence.
-//             We empower businesses to grow smarter and faster with cutting-edge technology.
-//           </p>
-//         </div>
-//       </section>
-
-//       {/* Mission / Vision / Values */}
-//       <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-//         <div className="grid gap-6 md:grid-cols-3">
-//           {[
-//             {
-//               title: "Mission",
-//               desc: "To deliver innovative, scalable, and secure IT solutions that accelerate digital transformation, unlock new opportunities, and create measurable business impact.",
-//               icon: <Target className="size-8 text-blue-600" />,
-//             },
-//             {
-//               title: "Vision",
-//               desc: "To be a globally trusted partner for enterprise-grade digital initiatives, empowering organizations to achieve operational excellence and sustainable growth.",
-//               icon: <Eye className="size-8 text-blue-600" />,
-//             },
-//             {
-//               title: "Values",
-//               desc: "Integrity, excellence, and collaboration define us. We place clients first, nurture continuous learning, and embrace innovation to deliver long-term value.",
-//               icon: <HeartHandshake className="size-8 text-blue-600" />,
-//             },
-//           ].map((item) => (
-//             <div
-//               key={item.title}
-//               className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 p-6 transition hover:shadow-xl"
-//             >
-//               <div className="flex items-center gap-3">
-//                 {item.icon}
-//                 <h2 className="font-semibold text-lg text-blue-600">{item.title}</h2>
-//               </div>
-//               <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{item.desc}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-
-//       {/* Why Choose Us (Extended with visuals) */}
-//       <WhyChooseUs extended />
-
-//       {/* Our Process */}
-//       <ProcessSteps />
-
-//       {/* Call To Action */}
-//       <section className="relative mx-auto max-w-6xl px-4 py-20 text-center mb-4">
-//         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl opacity-10" />
-//         <div className="relative bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-10 md:p-16">
-//           <h2 className="text-3xl md:text-4xl font-bold">
-//             Ready to Transform Your Business?
-//           </h2>
-//           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-//             Let’s collaborate to build scalable, modern, and reliable technology solutions that drive measurable success.
-//           </p>
-//           <div className="mt-6">
-//             <Button
-//               size="lg"
-//               onClick={() => router.push("/contact")}
-//               className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:from-blue-700 hover:to-cyan-600"
-//             >
-//               Contact Us Today
-//             </Button>
-//           </div>
-//         </div>
-//       </section>
-//     </main>
-//   )
-// }
-
 "use client";
 
 import { FloatingParticles } from "@/components/floating-particles";
@@ -119,7 +25,7 @@ export default function AboutPage() {
           className="mx-auto max-w-6xl px-4 py-16 md:py-24 relative text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-            About Read-itsoft
+            About Rextro IT
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Driving digital transformation with innovation, collaboration, and excellence.  

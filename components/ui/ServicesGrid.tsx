@@ -4,14 +4,14 @@ import Image from "next/image"
 
 const services = [
   {
+    title: "Corporate Training",
+    desc: "Salesforce, AWS, Microsoft, and React upskilling programs.",
+    img: "/corporate-training-classroom.png",
+  },
+  {
     title: "Salesforce Services",
     desc: "CRM setup, automation, Marketing & Service Cloud, integrations.",
     img: "/salesforce-crm-consulting.png",
-  },
-  {
-    title: "AWS Services",
-    desc: "Cloud setup, migration, security, cost optimization, DevOps.",
-    img: "/aws-cloud-architecture.png",
   },
   {
     title: "Microsoft Power Platform",
@@ -19,20 +19,22 @@ const services = [
     img: "/power-platform-dashboards.png",
   },
   {
-    title: "React Development",
+    title: "AWS Services",
+    desc: "Cloud setup, migration, security, cost optimization, DevOps.",
+    img: "/aws-cloud-architecture.png",
+  },
+  
+  {
+    title: "React and Web Development",
     desc: "Web apps, dashboards, portals with modern frameworks.",
     img: "/react-dashboard-ui.png",
   },
   {
-    title: "Web Dev & Design",
-    desc: "Modern, responsive websites with accessibility in mind.",
-    img: "/modern-corporate-website.png",
-  },
-  {
-    title: "Corporate Training",
-    desc: "Salesforce, AWS, Microsoft, and React upskilling programs.",
-    img: "/corporate-training-classroom.png",
-  },
+  title: "AI, ML & Data Science",
+  desc: "Harnessing data insights through AI to drive innovation and smart decisions.",
+  img: "/ml-ds.png"
+},
+  
 ]
 
 export function ServicesGrid() {

@@ -8,7 +8,7 @@ export function SiteFooter() {
         {/* Company */}
         <div className="col-span-2 md:col-span-1">
           <div className="font-semibold text-lg">
-            <span className="text-blue-600">Read</span>-itsoft
+            <span className="text-blue-600">Rextro </span>IT
           </div>
           <p className="text-sm text-muted-foreground mt-3">
             Empowering businesses with innovative IT solutions across Salesforce, AWS, Microsoft Power Platform, React,
@@ -70,7 +70,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Read-itsoft. All rights reserved.
+        © {new Date().getFullYear()} Rextro IT. All rights reserved.
       </div>
     </footer>
   )
