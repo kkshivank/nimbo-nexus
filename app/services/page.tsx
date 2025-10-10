@@ -273,9 +273,31 @@ export default function ServicesPage() {
   return (
     <main>
       {/* Hero - Matching Contact Page Style */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-cyan-500 opacity-10" />
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-100 text-gray-900">
+        {/* ✨ Background effects from Hero section */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="h-[800px] w-[800px] rounded-full bg-gradient-to-br from-sky-200/60 to-blue-300/30 blur-[200px]" />
+        </div>
+
+        {/* Animated grid background */}
+        <div className="absolute inset-0 opacity-[0.06]">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#0ea5e9_1px,transparent_1px),linear-gradient(to_bottom,#0ea5e9_1px,transparent_1px)] bg-[size:80px_80px] animate-slow-pan" />
+        </div>
+
+        {/* Subtle moving light wave */}
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute -bottom-20 left-0 w-full h-[300px] bg-gradient-to-t from-sky-200/50 via-transparent to-transparent blur-3xl"
+            animate={{
+              y: [0, -30, 0],
+              opacity: [0.7, 1, 0.7],
+            }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+
         <FloatingParticles />
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -290,6 +312,7 @@ export default function ServicesPage() {
           </p>
         </motion.div>
       </section>
+
 
       {/* Services Grid */}
       <section className="mx-auto max-w-7xl px-4 py-12 md:py-16">
