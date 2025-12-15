@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { FloatingParticles } from "@/components/floating-particles"
-import ServiceCardsRow from "@/components/service-cards-row"
+import { motion } from "framer-motion";
+import { FloatingParticles } from "@/components/floating-particles";
+import ServiceCardsRow from "@/components/service-cards-row";
 
 function SectionCard({
   title,
@@ -11,16 +11,16 @@ function SectionCard({
   note,
   index,
 }: {
-  title: string
-  description?: string
+  title: string;
+  description?: string;
   cards: {
-    title: string
-    description: string
-    imgUrl: string
-    imgAlt: string
-  }[]
-  note?: string
-  index: number
+    title: string;
+    description: string;
+    imgUrl: string;
+    imgAlt: string;
+  }[];
+  note?: string;
+  index: number;
 }) {
   return (
     <motion.div
@@ -32,7 +32,7 @@ function SectionCard({
     >
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-cyan-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      
+
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-3">
           <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full" />
@@ -40,15 +40,15 @@ function SectionCard({
             {title}
           </h2>
         </div>
-        
+
         {description && (
           <p className="text-gray-600 text-base mb-6 leading-relaxed">
             {description}
           </p>
         )}
-        
+
         <ServiceCardsRow cards={cards} />
-        
+
         {note && (
           <div className="mt-6 p-4 rounded-xl bg-blue-50/50 border border-blue-100/50">
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -58,14 +58,15 @@ function SectionCard({
         )}
       </div>
     </motion.div>
-  )
+  );
 }
 
 export default function ServicesPage() {
   const sections = [
     {
       title: "Corporate Training & Upskilling",
-      description: "Empower your teams with hands-on, role-based training programs designed to accelerate adoption and build lasting expertise across leading platforms.",
+      description:
+        "Empower your teams with hands-on, role-based training programs designed to accelerate adoption and build lasting expertise across leading platforms.",
       cards: [
         {
           title: "Salesforce Training",
@@ -98,35 +99,70 @@ export default function ServicesPage() {
       ],
       note: "All training programs include practical exercises, real-world scenarios, and post-training support to ensure knowledge retention.",
     },
+    // {
+    //   title: "Salesforce Solutions",
+    //   description: "Transform customer relationships with tailored Salesforce implementations that drive growth and operational excellence.",
+    //   cards: [
+    //     {
+    //       title: "CRM Implementation & Setup",
+    //       description:
+    //         "Build scalable, secure Salesforce foundations with optimized data models, user roles, and governance frameworks for long-term success.",
+    //       imgUrl: "/salesforce-crm-implementation-stock.png",
+    //       imgAlt: "Salesforce CRM Implementation",
+    //     },
+    //     {
+    //       title: "Service & Marketing Cloud",
+    //       description:
+    //         "Deliver exceptional customer experiences with intelligent service workflows, omnichannel support, and ROI-driven marketing automation.",
+    //       imgUrl: "/salesforce-marketing-cloud-contact-center-stock.png",
+    //       imgAlt: "Salesforce Clouds",
+    //     },
+    //     {
+    //       title: "Custom Development & Integration",
+    //       description:
+    //         "Extend Salesforce capabilities with custom Apex, Lightning components, and seamless integrations with enterprise systems.",
+    //       imgUrl: "/api-integration-diagram-stock.png",
+    //       imgAlt: "Salesforce Development",
+    //     },
+    //     {
+    //       title: "Automation & Process Optimization",
+    //       description:
+    //         "Eliminate manual work with intelligent workflows, approval processes, and Flow automations that scale with your business.",
+    //       imgUrl: "/workflow-automation-stock.png",
+    //       imgAlt: "Salesforce Automation",
+    //     },
+    //   ],
+    // },
     {
       title: "Salesforce Solutions",
-      description: "Transform customer relationships with tailored Salesforce implementations that drive growth and operational excellence.",
+      description:
+        "Drive digital transformation with powerful Salesforce cloud solutions, modern development, and enterprise-grade integrations.",
       cards: [
         {
-          title: "CRM Implementation & Setup",
+          title: "Sales & Service Cloud",
           description:
-            "Build scalable, secure Salesforce foundations with optimized data models, user roles, and governance frameworks for long-term success.",
+            "Enable high-performing sales teams and customer service operations with Sales and Service Cloud implementations designed for scalability, automation, and actionable insights.",
           imgUrl: "/salesforce-crm-implementation-stock.png",
           imgAlt: "Salesforce CRM Implementation",
         },
         {
-          title: "Service & Marketing Cloud",
+          title: "Experience Cloud & Velocity",
           description:
-            "Deliver exceptional customer experiences with intelligent service workflows, omnichannel support, and ROI-driven marketing automation.",
+            "Create personalized digital experiences using Experience Cloud and Salesforce Velocity to support industry-specific workflows and seamless customer journeys.",
           imgUrl: "/salesforce-marketing-cloud-contact-center-stock.png",
           imgAlt: "Salesforce Clouds",
         },
         {
-          title: "Custom Development & Integration",
+          title: "LWC Development",
           description:
-            "Extend Salesforce capabilities with custom Apex, Lightning components, and seamless integrations with enterprise systems.",
+            "Build fast, responsive, and reusable user interfaces with Lightning Web Components (LWC) that enhance performance and user adoption across Salesforce platforms.",
           imgUrl: "/api-integration-diagram-stock.png",
           imgAlt: "Salesforce Development",
         },
         {
-          title: "Automation & Process Optimization",
+          title: "Integration, Marketing Cloud & Agentforce",
           description:
-            "Eliminate manual work with intelligent workflows, approval processes, and Flow automations that scale with your business.",
+            "Connect Salesforce with enterprise systems through secure integrations, deliver personalized engagement using Marketing Cloud, and implement Agentforce for intelligent automation.",
           imgUrl: "/workflow-automation-stock.png",
           imgAlt: "Salesforce Automation",
         },
@@ -134,7 +170,8 @@ export default function ServicesPage() {
     },
     {
       title: "Microsoft Power Platform",
-      description: "Unlock productivity with low-code solutions that transform data into insights and automate business-critical processes.",
+      description:
+        "Unlock productivity with low-code solutions that transform data into insights and automate business-critical processes.",
       cards: [
         {
           title: "Power BI Analytics",
@@ -168,7 +205,8 @@ export default function ServicesPage() {
     },
     {
       title: "AWS Cloud Services",
-      description: "Accelerate digital transformation with secure, scalable cloud infrastructure designed for enterprise performance.",
+      description:
+        "Accelerate digital transformation with secure, scalable cloud infrastructure designed for enterprise performance.",
       cards: [
         {
           title: "Cloud Migration & Modernization",
@@ -202,7 +240,8 @@ export default function ServicesPage() {
     },
     {
       title: "React & Web Development",
-      description: "Craft exceptional digital experiences with modern web applications that prioritize performance, accessibility, and user engagement.",
+      description:
+        "Craft exceptional digital experiences with modern web applications that prioritize performance, accessibility, and user engagement.",
       cards: [
         {
           title: "Custom Dashboards & Portals",
@@ -236,7 +275,8 @@ export default function ServicesPage() {
     },
     {
       title: "AI & Machine Learning",
-      description: "Harness the power of artificial intelligence to automate processes, extract insights, and drive innovation across your organization.",
+      description:
+        "Harness the power of artificial intelligence to automate processes, extract insights, and drive innovation across your organization.",
       cards: [
         {
           title: "AI Strategy & Consulting",
@@ -268,7 +308,7 @@ export default function ServicesPage() {
         },
       ],
     },
-  ]
+  ];
 
   return (
     <main>
@@ -308,11 +348,12 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            From strategy to execution, we deliver future-ready solutions that drive measurable growth, enhance operational efficiency, and create lasting competitive advantage for your business.
+            From strategy to execution, we deliver future-ready solutions that
+            drive measurable growth, enhance operational efficiency, and create
+            lasting competitive advantage for your business.
           </p>
         </motion.div>
       </section>
-
 
       {/* Services Grid */}
       <section className="mx-auto max-w-7xl px-4 py-12 md:py-16">
@@ -354,5 +395,5 @@ export default function ServicesPage() {
         </motion.div>
       </section>
     </main>
-  )
+  );
 }

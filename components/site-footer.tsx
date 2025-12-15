@@ -8,7 +8,7 @@ export function SiteFooter() {
         {/* Company */}
         <div className="col-span-2 md:col-span-1">
           <div className="font-semibold text-lg">
-            <span className="text-blue-600">Rextro </span>IT
+            <span className="text-blue-600">Nimbo</span>Nexus
           </div>
           <p className="text-sm text-muted-foreground mt-3">
             Empowering businesses with innovative IT solutions across Salesforce, AWS, Microsoft Power Platform, React,
@@ -47,14 +47,14 @@ export function SiteFooter() {
         <div>
           <h3 className="font-medium mb-3">Contact</h3>
           <ul className="space-y-2 text-sm">
-            <li>Email: contact@read-itsoft.com</li>
-            <li>Phone: +1 (555) 123-4567</li>
-            <li>Address: 123 Innovation Way, Tech City</li>
+            <li>Email: shivanklavania6@gmail.com</li>
+            <li>Phone: +91 79 7606 6296</li>
+            <li>Address: PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura Jaipur Rajasthan India 302017</li>
           </ul>
         </div>
 
         {/* Social */}
-        <div>
+        {/* <div>
           <h3 className="font-medium mb-3">Follow Us</h3>
           <div className="flex items-center gap-3">
             <Link aria-label="Facebook" href="https://facebook.com" className="p-2 rounded-md border hover:bg-muted">
@@ -67,10 +67,10 @@ export function SiteFooter() {
               <Linkedin className="size-5" />
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Rextro IT. All rights reserved.
+        © {new Date().getFullYear()} NimboNexus. All rights reserved.
       </div>
     </footer>
   )

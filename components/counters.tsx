@@ -42,10 +42,10 @@ export function Counters() {
   const inView = useInView(ref)
 
   const stats = [
-    { label: "Projects Delivered", value: 120 },
-    { label: "Certified Experts", value: 25 },
+    { label: "Projects Delivered", value: 50 },
+    { label: "Certified Experts", value: 10 },
     { label: "Client Satisfaction", value: 98 },
-    { label: "Training Sessions", value: 300 },
+    { label: "Training Sessions", value: 100 },
   ]
 
   return (

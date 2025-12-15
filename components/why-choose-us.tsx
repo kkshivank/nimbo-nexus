@@ -39,7 +39,7 @@ export function WhyChooseUs({ extended = false }: { extended?: boolean }) {
 
   return (
     <section ref={ref} className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Choose <span className="text-blue-600">Rextro <span className="text-blue-600">IT</span></span></h2>
+      <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Choose <span className="text-blue-600">Nimbo<span className="text-blue-600">Nexus</span></span></h2>
       
       {extended && (
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto text-center">

@@ -7,19 +7,23 @@ import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Suspense } from "react"
+import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Rextro IT",
-  description: "Salesforce, AWS, Microsoft Power Platform, React, Web Development, and Training.",
+  title: "NimboNexus",
+  description:
+    "Salesforce, AWS, Microsoft Power Platform, React, Web Development, and Training.",
   generator: "v0.app",
+  icons: {
+    icon: "/nimbo-logo.png",
+    shortcut: "/nimbo-logo.png",
+    apple: "/nimbo-logo.png",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
+   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-      <head>
-        <link rel="icon" href="https://cdn-icons-png.freepik.com/512/4997/4997543.png" />
-      </head>
       <body className="font-sans">
         <Suspense fallback={<div>Loading...</div>}>
           <SiteHeader />

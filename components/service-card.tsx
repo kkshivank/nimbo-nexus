@@ -88,8 +88,8 @@ export default function ServiceCard({
 
         {/* Hover indicator */}
         <div className="mt-4 flex items-center gap-2 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span className="text-sm font-medium">Learn more</span>
-          <svg
+          {/* <span className="text-sm font-medium">Learn more</span> */}
+          {/* <svg
             className="w-4 h-4 transition-transform group-hover:translate-x-1"
             fill="none"
             viewBox="0 0 24 24"
@@ -101,7 +101,7 @@ export default function ServiceCard({
               strokeWidth={2}
               d="M9 5l7 7-7 7"
             />
-          </svg>
+          </svg> */}
         </div>
       </div>
 

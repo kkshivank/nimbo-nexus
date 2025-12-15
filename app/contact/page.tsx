@@ -157,11 +157,11 @@ export default function ContactPage() {
             <div className="rounded-2xl border bg-white/80 backdrop-blur-lg shadow-xl shadow-blue-100 p-6">
               <h3 className="font-medium text-lg">Our Office</h3>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                123 Innovation Way, Tech City
+                PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura Jaipur Rajasthan India 302017
                 <br />
-                contact@read-itsoft.com
+                shivanklavania6@gmail.com
                 <br />
-                +1 (555) 123-4567
+                +91 79 7606 6296
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden border shadow-md">
@@ -173,7 +173,7 @@ export default function ContactPage() {
                 src="https://www.google.com/maps?q=Times%20Square%2C%20New%20York&output=embed"
               />
             </div>
-            <div className="text-sm text-muted-foreground">
+            {/* <div className="text-sm text-muted-foreground">
               Connect with us:{" "}
               <a className="underline hover:text-blue-600" href="https://linkedin.com">
                 LinkedIn
@@ -186,7 +186,7 @@ export default function ContactPage() {
               <a className="underline hover:text-blue-600" href="https://facebook.com">
                 Facebook
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>

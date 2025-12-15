@@ -12,51 +12,58 @@ export default function HomePage() {
       <Hero />
 
       {/* Driving Digital Excellence (Redesigned Impact Section) */}
-<section className="relative mx-auto max-w-6xl px-4 py-12">
-  <div className="grid md:grid-cols-2 gap-12 items-center">
-    {/* Left Content */}
-    <div>
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
-        Driving <span className="text-blue-600">Digital Excellence</span>
-      </h2>
-      <p className="mt-4 text-gray-600 leading-relaxed">
-        At <span className="font-semibold text-gray-800">Rextro IT</span>, we 
-        empower organizations to <span className="font-semibold text-gray-800">modernize</span>, 
-        <span className="font-semibold text-gray-800"> automate</span>, and 
-        <span className="font-semibold text-gray-800"> scale</span> their operations.  
-        From <span className="text-blue-600 font-medium">cloud transformation</span> 
-        to <span className="text-blue-600 font-medium">enterprise automation</span>, 
-        we help businesses stay ahead in a digital-first world.
-      </p>
+      <section className="relative mx-auto max-w-6xl px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+              Driving <span className="text-blue-600">Digital Excellence</span>
+            </h2>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              At <span className="font-semibold text-gray-800">NimboNexus</span>,
+              we empower organizations to{" "}
+              <span className="font-semibold text-gray-800">modernize</span>,
+              <span className="font-semibold text-gray-800"> automate</span>,
+              and
+              <span className="font-semibold text-gray-800"> scale</span> their
+              operations. From{" "}
+              <span className="text-blue-600 font-medium">
+                cloud transformation
+              </span>
+              to{" "}
+              <span className="text-blue-600 font-medium">
+                enterprise automation
+              </span>
+              , we help businesses stay ahead in a digital-first world.
+            </p>
 
-      {/* Quick Impact Stats */}
-      <div className="mt-6 flex flex-wrap gap-6 text-sm">
-        <div>
-          <p className="text-2xl font-bold text-blue-600">10+</p>
-          <p className="text-gray-600">Years of Innovation</p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-blue-600">50+</p>
-          <p className="text-gray-600">Global Enterprise Clients</p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-blue-600">100+</p>
-          <p className="text-gray-600">Successful Projects</p>
-        </div>
-      </div>
-    </div>
+            {/* Quick Impact Stats */}
+            <div className="mt-6 flex flex-wrap gap-6 text-sm">
+              <div>
+                <p className="text-2xl font-bold text-blue-600">5+</p>
+                <p className="text-gray-600">Years of Innovation</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-blue-600">20+</p>
+                <p className="text-gray-600">Global Enterprise Clients</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-blue-600">50+</p>
+                <p className="text-gray-600">Successful Projects</p>
+              </div>
+            </div>
+          </div>
 
-    {/* Right Image */}
-    <div className="relative w-full h-72 md:h-auto rounded-2xl overflow-hidden shadow-lg">
-      <img
-        src="https://digifame.in/wp-content/uploads/2024/02/internet-marketing-online-advertisement.jpg"
-        alt="Driving Digital Excellence"
-        className="object-cover w-full h-full hover:scale-105 transition duration-700"
-      />
-    </div>
-  </div>
-</section>
-
+          {/* Right Image */}
+          <div className="relative w-full h-72 md:h-auto rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="https://digifame.in/wp-content/uploads/2024/02/internet-marketing-online-advertisement.jpg"
+              alt="Driving Digital Excellence"
+              className="object-cover w-full h-full hover:scale-105 transition duration-700"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us */}
       <WhyChooseUs />
@@ -84,19 +91,19 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+      {/* <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           Our <span className="text-blue-600">Projects</span>
         </h2>
         <p className="mt-3 text-gray-600 text-center max-w-2xl mx-auto">
           A glimpse of the impactful solutions we’ve delivered across
           industries.
-        </p>
+        </p> */}
 
         {/* Project Cards */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8"> */}
           {/* Card 1 */}
-          <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
+          {/* <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
             <img
               src="https://img.freepik.com/premium-photo/programmer-coding-software-development-working-project-it_1423-2974.jpg"
               alt="Project Alpha"
@@ -109,10 +116,10 @@ export default function HomePage() {
               A digital transformation initiative for a leading retail company
               that boosted efficiency by 40%.
             </p>
-          </div>
+          </div> */}
 
           {/* Card 2 */}
-          <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
+          {/* <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
             <img
               src="https://i.insider.com/601441dd6dfbe10018e00c25?width=700"
               alt="Project Beta"
@@ -125,10 +132,10 @@ export default function HomePage() {
               Cloud migration for a global finance firm ensuring scalability,
               security, and compliance.
             </p>
-          </div>
+          </div> */}
 
           {/* Card 3 */}
-          <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
+          {/* <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition flex flex-col">
             <img
               src="https://www.computersciencedegreehub.com/wp-content/uploads/2020/06/Is-Computer-Coding-Useful-for-the-Average-Person-1024x683.jpg"
               alt="Project Gamma"
@@ -141,9 +148,10 @@ export default function HomePage() {
               AI-driven stakeholder engagement platform deployed across multiple
               government agencies.
             </p>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+
+      {/* </section> */}
 
       {/* Call To Action */}
       <section className="mx-auto max-w-3xl px-4 py-12 text-center">
