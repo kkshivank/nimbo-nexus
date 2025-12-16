@@ -47,7 +47,7 @@ export function SiteFooter() {
         <div>
           <h3 className="font-medium mb-3">Contact</h3>
           <ul className="space-y-2 text-sm">
-            <li>Email: shivanklavania6@gmail.com</li>
+            <li>Email: contact@nimbonexus.com</li>
             <li>Phone: +91 79 7606 6296</li>
             <li>Address: PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura Jaipur Rajasthan India 302017</li>
           </ul>

@@ -159,19 +159,28 @@ export default function ContactPage() {
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                 PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura Jaipur Rajasthan India 302017
                 <br />
-                shivanklavania6@gmail.com
+                contact@nimbonexus.com
                 <br />
                 +91 79 7606 6296
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden border shadow-md">
-              <iframe
-                title="Read-itsoft Office Map"
+              {/* <iframe
+                title="Nimbo nexus Office Map"
                 className="w-full h-64"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Times%20Square%2C%20New%20York&output=embed"
-              />
+                src="https://maps.app.goo.gl/2e1gsHwAMn8hgtXB6"
+              /> */}
+              <iframe
+  title="Nimbo nexus Office Map"
+  className="w-full h-64"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  allowFullScreen
+  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3222.6747588584503!2d75.875999!3d26.802663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQ4JzA5LjYiTiA3NcKwNTInMzMuNiJF!5e1!3m2!1sen!2sin!4v1765894673093!5m2!1sen!2sin"
+/>
+
             </div>
             {/* <div className="text-sm text-muted-foreground">
               Connect with us:{" "}
