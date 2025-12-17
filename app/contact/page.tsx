@@ -1,23 +1,41 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { FloatingParticles } from "@/components/floating-particles"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { FloatingParticles } from "@/components/floating-particles";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import emailjs from "emailjs-com";
 
 export default function ContactPage() {
-  const [loading, setLoading] = useState(false)
-  const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setLoading(true)
-    await new Promise((r) => setTimeout(r, 800)) // simulate API
-    setLoading(false)
-    setSent(true)
+    e.preventDefault();
+    setLoading(true);
+    setSent(false);
+
+    const form = e.currentTarget;
+
+    try {
+      await emailjs.sendForm(
+        "service_lc8lblw",
+        "template_nf60xhp",
+        form,
+        "2iq2YcirJyqvsoJO2"
+      );
+
+      setSent(true);
+      form.reset();
+    } catch (error) {
+      console.error("Email send error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -58,13 +76,11 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let’s talk about your project, explore possibilities, and craft a solution that fits your goals.
+            Let’s talk about your project, explore possibilities, and craft a
+            solution that fits your goals.
           </p>
         </motion.div>
       </section>
-
-
-      
 
       {/* Contact form + Info */}
       <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
@@ -77,10 +93,15 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="rounded-2xl border bg-white/80 backdrop-blur-lg shadow-xl shadow-blue-100 p-6 md:p-8"
           >
-            <h2 className="text-2xl font-semibold mb-6 text-center">Send us a message</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center">
+              Send us a message
+            </h2>
             <form onSubmit={onSubmit} className="space-y-5">
               <div className="relative">
-                <Label htmlFor="name" className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500">
+                <Label
+                  htmlFor="name"
+                  className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500"
+                >
                   Name
                 </Label>
                 <Input
@@ -93,7 +114,10 @@ export default function ContactPage() {
               </div>
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="relative">
-                  <Label htmlFor="email" className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500">
+                  <Label
+                    htmlFor="email"
+                    className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500"
+                  >
                     Email
                   </Label>
                   <Input
@@ -106,7 +130,10 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="relative">
-                  <Label htmlFor="phone" className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500">
+                  <Label
+                    htmlFor="phone"
+                    className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500"
+                  >
                     Phone
                   </Label>
                   <Input
@@ -119,7 +146,10 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="relative">
-                <Label htmlFor="message" className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500">
+                <Label
+                  htmlFor="message"
+                  className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-500"
+                >
                   Message
                 </Label>
                 <Textarea
@@ -157,7 +187,8 @@ export default function ContactPage() {
             <div className="rounded-2xl border bg-white/80 backdrop-blur-lg shadow-xl shadow-blue-100 p-6">
               <h3 className="font-medium text-lg">Our Office</h3>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura Jaipur Rajasthan India 302017
+                PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura
+                Jaipur Rajasthan India 302017
                 <br />
                 contact@nimbonexus.com
                 <br />
@@ -173,14 +204,13 @@ export default function ContactPage() {
                 src="https://maps.app.goo.gl/2e1gsHwAMn8hgtXB6"
               /> */}
               <iframe
-  title="Nimbo nexus Office Map"
-  className="w-full h-64"
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  allowFullScreen
-  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3222.6747588584503!2d75.875999!3d26.802663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQ4JzA5LjYiTiA3NcKwNTInMzMuNiJF!5e1!3m2!1sen!2sin!4v1765894673093!5m2!1sen!2sin"
-/>
-
+                title="Nimbo nexus Office Map"
+                className="w-full h-64"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3222.6747588584503!2d75.875999!3d26.802663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQ4JzA5LjYiTiA3NcKwNTInMzMuNiJF!5e1!3m2!1sen!2sin!4v1765894673093!5m2!1sen!2sin"
+              />
             </div>
             {/* <div className="text-sm text-muted-foreground">
               Connect with us:{" "}
@@ -200,5 +230,5 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
