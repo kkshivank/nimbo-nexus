@@ -187,12 +187,16 @@ export default function ContactPage() {
             <div className="rounded-2xl border bg-white/80 backdrop-blur-lg shadow-xl shadow-blue-100 p-6">
               <h3 className="font-medium text-lg">Our Office</h3>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                PL No.44 Ashadep Shripuram Shrikrishanpura Sanganer Jagatpura
-                Jaipur Rajasthan India 302017
-                <br />
-                contact@nimbonexus.com
-                <br />
-                +91 79 7606 6296
+                <ul className="space-y-2 text-sm">
+                  <li>Email: contact@nimbonexus.com</li>
+                  {/* <li>Phone: +91 79 7606 6296</li> */}
+                  <li>
+                    Address :
+                    Jagatpura,<br />
+                    Jaipur, Rajasthan 302017,<br />
+                    India
+                  </li>
+                </ul>
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden border shadow-md">
