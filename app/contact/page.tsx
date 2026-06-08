@@ -207,14 +207,14 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 src="https://maps.app.goo.gl/2e1gsHwAMn8hgtXB6"
               /> */}
-              <iframe
+              {/* <iframe
                 title="Nimbo nexus Office Map"
                 className="w-full h-64"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3222.6747588584503!2d75.875999!3d26.802663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQ4JzA5LjYiTiA3NcKwNTInMzMuNiJF!5e1!3m2!1sen!2sin!4v1765894673093!5m2!1sen!2sin"
-              />
+              /> */}
             </div>
             {/* <div className="text-sm text-muted-foreground">
               Connect with us:{" "}
