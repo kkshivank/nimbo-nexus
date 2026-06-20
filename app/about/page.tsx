@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { FloatingParticles } from "@/components/floating-particles";
@@ -61,16 +58,7 @@ export default function AboutPage() {
 
       {/* Mission / Vision / Values */}
       <section className="mx-auto max-w-6xl px-4 py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, y: 40 },
-            visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2 } },
-          }}
-          className="grid gap-8 md:grid-cols-3"
-        >
+        <div className="grid gap-8 md:grid-cols-3">
           {[
             {
               title: "Mission",
@@ -91,19 +79,16 @@ export default function AboutPage() {
               img: "https://p-gpb8fhd4b9fbh6fy.z01.azurefd.net/cms/e6ba6aae-63bf-4023-8c3a-862466828e71/b3e7b1c4-025d-44a9-af65-b46ef7526fac-lg.jpg",
             },
           ].map((item) => (
-            <motion.div
+            <div
               key={item.title}
               className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 overflow-hidden hover:shadow-xl transition group"
-              variants={{
-                hidden: { opacity: 0, y: 40 },
-                visible: { opacity: 1, y: 0 },
-              }}
             >
               <div className="relative h-40 w-full overflow-hidden">
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition duration-500"
                 />
               </div>
@@ -116,9 +101,9 @@ export default function AboutPage() {
                   {item.desc}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </section>
 
       {/* Why Choose Us */}
