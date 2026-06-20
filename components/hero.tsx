@@ -24,7 +24,7 @@ export function Hero() {
 
       <div className="relative z-30 mx-auto max-w-8xl px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.2, 0.6, 0.3, 0.9] }}
           className="lg:text-left text-center"
