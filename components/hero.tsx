@@ -66,13 +66,14 @@ export function Hero() {
         >
           <div className="relative w-full max-w-md md:max-w-lg h-[400px] md:h-[500px] rounded-bl-[60px] rounded-tr-[60px] rounded-br-[20px] rounded-tl-[20px] overflow-hidden shadow-3xl shadow-blue-700/40 transform rotate-2 hover:rotate-0 transition-all duration-500 ease-in-out group border border-sky-500/30 hidden lg:flex">
             <Image
-              src="/Hero.jpg"
-              alt="Professional team collaborating on innovative IT solutions in a modern, elegant office setting, bathed in soft ambient light."
-              layout="fill"
-              objectFit="cover"
-              quality={90}
-              className="group-hover:scale-105 transition-transform duration-500 ease-in-out filter brightness-90 contrast-110"
-            />
+  src="/Hero.jpg"
+  alt="Professional team collaborating on innovative IT solutions in a modern, elegant office setting, bathed in soft ambient light."
+  fill
+  priority
+  quality={90}
+  sizes="(max-width: 1024px) 0px, 500px"
+  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out filter brightness-90 contrast-110"
+/>
             <div className="absolute inset-0 bg-gradient-to-tl from-blue-800/30 via-transparent to-purple-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="absolute inset-0 ring-4 ring-sky-500/10 ring-inset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
