@@ -5,13 +5,14 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+import { Suspense } from "react";
 
 import "./globals.css";
 
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-
-import { Suspense } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nimbonexus.com"),
@@ -22,13 +23,13 @@ export const metadata: Metadata = {
   },
 
   description:
-    "NimboNexus delivers Salesforce consulting, AI solutions, cloud transformation, web development, Microsoft Power Platform and enterprise digital services.",
+    "NimboNexus delivers Salesforce consulting, AI solutions, cloud transformation, React development, Microsoft Power Platform and enterprise digital services.",
 
   keywords: [
     "NimboNexus",
     "Salesforce",
-    "Salesforce Development",
     "Salesforce Consulting",
+    "Salesforce Development",
     "AI Solutions",
     "Cloud Services",
     "React Development",
@@ -88,19 +89,20 @@ export const metadata: Metadata = {
     images: ["/nimbo-logo.png"],
   },
 
-  icons: {
-    icon: "/nimbo-logo.png",
-    shortcut: "/nimbo-logo.png",
-    apple: "/nimbo-logo.png",
-  },
-
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
     },
+  },
+
+  icons: {
+    icon: "/nimbo-logo.png",
+    shortcut: "/nimbo-logo.png",
+    apple: "/nimbo-logo.png",
   },
 };
 
@@ -124,6 +126,8 @@ export default function RootLayout({
         </Suspense>
 
         <Analytics />
+
+        <GoogleAnalytics gaId="G-B01D77NWQH" />
       </body>
     </html>
   );
