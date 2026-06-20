@@ -81,7 +81,9 @@ export default function AboutPage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 overflow-hidden hover:shadow-xl transition group"
+    style={{ animationDelay: `${index * 150}ms` }}
+    className="rounded-2xl border bg-white/90 backdrop-blur-md shadow-lg shadow-blue-100 overflow-hidden hover:shadow-xl transition group animate-in fade-in slide-in-from-bottom-8 duration-700 fill-mode-both"
+
             >
               <div className="relative h-40 w-full overflow-hidden">
                 <Image
