@@ -24,9 +24,9 @@ export function Hero() {
 
       <div className="relative z-30 mx-auto max-w-8xl px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
-          initial={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: [0.2, 0.6, 0.3, 0.9] }}
+          transition={{ duration: 0.8, ease: [0.2, 0.6, 0.3, 0.9] }}
           className="lg:text-left text-center"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-blue-400 via-sky-300 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
