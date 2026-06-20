@@ -78,7 +78,7 @@ export default function AboutPage() {
               icon: <HeartHandshake className="size-8 text-blue-600" />,
               img: "https://p-gpb8fhd4b9fbh6fy.z01.azurefd.net/cms/e6ba6aae-63bf-4023-8c3a-862466828e71/b3e7b1c4-025d-44a9-af65-b46ef7526fac-lg.jpg",
             },
-          ].map((item) => (
+          ].map((item, index) => (
             <div
               key={item.title}
     style={{ animationDelay: `${index * 150}ms` }}
