@@ -54,18 +54,28 @@ export default function HomePage() {
             <div className="mt-6 flex flex-wrap gap-6 text-sm">
 
               <div>
-                <p className="text-2xl font-bold text-blue-600">5+</p>
-                <p className="text-gray-600">Years of Innovation</p>
+                <p className="text-2xl font-bold text-blue-600">5+ Years</p>
+                <p className="text-gray-600">Salesforce Ecosystem Experience</p>
               </div>
 
               <div>
-                <p className="text-2xl font-bold text-blue-600">20+</p>
-                <p className="text-gray-600">Global Enterprise Clients</p>
+                <p className="text-2xl font-bold text-blue-600">4+</p>
+                <p className="text-gray-600">Clients Served</p>
               </div>
 
               <div>
-                <p className="text-2xl font-bold text-blue-600">50+</p>
+                <p className="text-2xl font-bold text-blue-600">4+</p>
                 <p className="text-gray-600">Successful Projects</p>
+              </div>
+
+              <div>
+                <p className="text-2xl font-bold text-blue-600">10+</p>
+                <p className="text-gray-600">Technology Professionals</p>
+              </div>
+
+              <div>
+                <p className="text-2xl font-bold text-blue-600">100%</p>
+                <p className="text-gray-600">Client Satisfaction</p>
               </div>
 
             </div>

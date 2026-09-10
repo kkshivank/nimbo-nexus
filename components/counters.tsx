@@ -42,20 +42,21 @@ export function Counters() {
   const inView = useInView(ref)
 
   const stats = [
-    { label: "Projects Delivered", value: 50 },
-    { label: "Certified Experts", value: 10 },
-    { label: "Client Satisfaction", value: 98 },
-    { label: "Training Sessions", value: 100 },
+    { label: "Salesforce Ecosystem Experience", value: 5, suffix: "+ Years" },
+    { label: "Clients Served", value: 4, suffix: "+" },
+    { label: "Successful Projects", value: 4, suffix: "+" },
+    { label: "Technology Professionals", value: 10, suffix: "+" },
+    { label: "Client Satisfaction", value: 100, suffix: "%" },
   ]
 
   return (
     <section ref={ref} className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
         {stats.map((s) => (
           <div key={s.label} className="p-4 rounded-lg border bg-card text-card-foreground text-center">
             <div className="text-3xl font-semibold">
               {inView ? <AnimatedNumber to={s.value} /> : 0}
-              {s.label === "Client Satisfaction" ? "%" : "+"}
+              {s.suffix}
             </div>
             <div className="mt-1 text-sm text-muted-foreground">{s.label}</div>
           </div>
