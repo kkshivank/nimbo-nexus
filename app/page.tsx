@@ -49,36 +49,6 @@ export default function HomePage() {
               </span>
               , we help businesses stay ahead in a digital-first world.
             </p>
-
-            {/* Stats */}
-            <div className="mt-6 flex flex-wrap gap-6 text-sm">
-
-              <div>
-                <p className="text-2xl font-bold text-blue-600">5+ Years</p>
-                <p className="text-gray-600">Salesforce Ecosystem Experience</p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-bold text-blue-600">4+</p>
-                <p className="text-gray-600">Clients Served</p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-bold text-blue-600">4+</p>
-                <p className="text-gray-600">Successful Projects</p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-bold text-blue-600">10+</p>
-                <p className="text-gray-600">Technology Professionals</p>
-              </div>
-
-              <div>
-                <p className="text-2xl font-bold text-blue-600">100%</p>
-                <p className="text-gray-600">Client Satisfaction</p>
-              </div>
-
-            </div>
           </div>
 
           {/* Right Image */}
