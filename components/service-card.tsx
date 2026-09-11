@@ -78,7 +78,7 @@ export default function ServiceCard({
 
         {/* Content */}
         <div className="mt-5 space-y-2">
-          <h4 className="text-lg font-bold text-gray-900 leading-snug group-hover:text-blue-700 transition-colors duration-300">
+          <h4 className="text-lg font-bold text-gray-900 leading-snug line-clamp-2 min-h-[3.25rem] group-hover:text-blue-700 transition-colors duration-300">
             {title}
           </h4>
           <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
