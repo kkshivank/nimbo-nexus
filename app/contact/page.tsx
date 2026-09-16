@@ -73,11 +73,11 @@ export default function ContactPage() {
           className="mx-auto max-w-6xl px-4 py-16 md:py-24 relative text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-            Get in Touch
+            Connect With NimboNexus
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let’s talk about your project, explore possibilities, and craft a
-            solution that fits your goals.
+            Have a question, want to collaborate, or just want to say hi?
+            Reach out — we’d love to hear from you.
           </p>
         </motion.div>
       </section>
@@ -185,17 +185,10 @@ export default function ContactPage() {
             className="space-y-6"
           >
             <div className="rounded-2xl border bg-white/80 backdrop-blur-lg shadow-xl shadow-blue-100 p-6">
-              <h3 className="font-medium text-lg">Our Office</h3>
+              <h3 className="font-medium text-lg">Based in Jaipur, India</h3>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                 <ul className="space-y-2 text-sm">
                   <li>Email: contact@nimbonexus.com</li>
-                  {/* <li>Phone: +91 79 7606 6296</li> */}
-                  <li>
-                    Address :
-                    Jagatpura,<br />
-                    Jaipur, Rajasthan 302017,<br />
-                    India
-                  </li>
                 </ul>
               </p>
             </div>

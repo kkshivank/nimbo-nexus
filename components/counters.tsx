@@ -43,10 +43,10 @@ export function Counters() {
 
   const stats = [
     { label: "Salesforce Ecosystem Experience", value: 5, suffix: "+ Years" },
-    { label: "Clients Served", value: 4, suffix: "+" },
-    { label: "Successful Projects", value: 4, suffix: "+" },
+    { label: "Organizations Collaborated With", value: 4, suffix: "+" },
+    { label: "Projects & Collaborations", value: 4, suffix: "+" },
     { label: "Technology Professionals", value: 10, suffix: "+" },
-    { label: "Client Satisfaction", value: 100, suffix: "%" },
+    { label: "Real-World Impact", value: 100, suffix: "%" },
   ]
 
   return (

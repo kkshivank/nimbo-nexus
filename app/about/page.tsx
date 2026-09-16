@@ -50,8 +50,8 @@ export default function AboutPage() {
             About NimboNexus
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Driving digital transformation with innovation, collaboration, and excellence.  
-            We empower businesses to grow smarter and faster with cutting-edge technology.
+            A technology community for people who learn, build and grow together.
+            We explore Salesforce, DevOps, React, AI and Cloud through real projects, honest knowledge-sharing, and collaboration.
           </p>
         </motion.div>
       </section>
@@ -62,19 +62,19 @@ export default function AboutPage() {
           {[
             {
               title: "Mission",
-              desc: "Deliver innovative, scalable, and secure IT solutions that accelerate digital transformation, unlock new opportunities, and create measurable business impact.",
+              desc: "Help people learn technology by building real things — through practical projects, shared knowledge, and honest experimentation.",
               icon: <Target className="size-8 text-blue-600" />,
               img: "https://media.licdn.com/dms/image/v2/D4E12AQHgMxo-g7BYsw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1658422953944?e=2147483647&v=beta&t=Z2tA86SPCvcG9ieACH8jr4SSL47dclFPchqYJIPI4gY",
             },
             {
               title: "Vision",
-              desc: "To be a globally trusted partner for enterprise-grade digital initiatives, empowering organizations to achieve operational excellence and sustainable growth.",
+              desc: "To grow into a technology community that spans India and the world — where learners become builders, and builders help the next person learn.",
               icon: <Eye className="size-8 text-blue-600" />,
               img: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_1/9653016/447231_712259.png",
             },
             {
               title: "Values",
-              desc: "Integrity, excellence, and collaboration define us. We put clients first, embrace innovation, and nurture continuous learning to deliver long-term value.",
+              desc: "Honesty, curiosity, and collaboration define us. We share what we genuinely know, keep learning, and support each other's growth.",
               icon: <HeartHandshake className="size-8 text-blue-600" />,
               img: "https://p-gpb8fhd4b9fbh6fy.z01.azurefd.net/cms/e6ba6aae-63bf-4023-8c3a-862466828e71/b3e7b1c4-025d-44a9-af65-b46ef7526fac-lg.jpg",
             },

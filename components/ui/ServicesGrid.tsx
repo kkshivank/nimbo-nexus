@@ -4,34 +4,34 @@ import Image from "next/image"
 
 const services = [
   {
-    title: "Corporate Training",
-    desc: "Salesforce, AWS, Microsoft, and React upskilling programs.",
+    title: "Learning & Workshops",
+    desc: "Community sessions and hands-on workshops on Salesforce, AWS, Microsoft and React.",
     img: "/corporate-training-classroom.png",
   },
   {
-    title: "Salesforce Services",
-    desc: "CRM setup, automation, Marketing & Service Cloud, integrations.",
+    title: "Salesforce",
+    desc: "CRM concepts, automation, Marketing & Service Cloud, and integrations — learned through real projects.",
     img: "/salesforce-crm-consulting.png",
   },
   {
     title: "Microsoft Power Platform",
-    desc: "Power BI, Power Apps, Power Automate, Dataverse solutions.",
+    desc: "Power BI, Power Apps, Power Automate and Dataverse — explored through hands-on builds.",
     img: "/power-platform-dashboards.png",
   },
   {
-    title: "AWS Services",
-    desc: "Cloud setup, migration, security, cost optimization, DevOps.",
+    title: "AWS & Cloud",
+    desc: "Cloud fundamentals, migration, security and cost optimization — learned by doing.",
     img: "/aws-cloud-architecture.png",
   },
   
   {
     title: "React and Web Development",
-    desc: "Web apps, dashboards, portals with modern frameworks.",
+    desc: "Web apps, dashboards and portals built with modern frameworks as community projects.",
     img: "/react-dashboard-ui.png",
   },
   {
   title: "AI, ML & Data Science",
-  desc: "Harnessing data insights through AI to drive innovation and smart decisions.",
+  desc: "Exploring data, AI and ML together to build smarter, more useful projects.",
   img: "/ml-ds.png"
 },
   
@@ -41,10 +41,10 @@ export function ServicesGrid() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Our <span className="text-blue-600">Services</span>
+        What We <span className="text-blue-600">Explore</span>
       </h2>
       <p className="mt-3 text-gray-600 text-center max-w-2xl mx-auto">
-        Explore our core capabilities designed to help businesses modernize, automate, and grow.
+        The technology areas our community learns, builds and experiments with together.
       </p>
 
       {/* Service Cards */}

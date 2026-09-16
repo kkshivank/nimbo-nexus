@@ -11,8 +11,7 @@ export function SiteFooter() {
             <span className="text-blue-600">Nimbo</span>Nexus
           </div>
           <p className="text-sm text-muted-foreground mt-3">
-            Empowering businesses with innovative IT solutions across Salesforce, AWS, Microsoft Power Platform, React,
-            and Web.
+            A technology community for learners, developers and builders — exploring Salesforce, DevOps, AWS, React, AI and Cloud together.
           </p>
         </div>
 

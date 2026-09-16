@@ -10,18 +10,18 @@ import Image from "next/image"
 const items = [
   {
     icon: <Cog className="size-6 text-blue-600" />,
-    title: "Tailored Solutions",
-    desc: "We craft strategies that fit your unique goals, timelines, and technology stack—never one-size-fits-all."
+    title: "Hands-On Learning",
+    desc: "We learn by building real things — practical projects over passive tutorials, across Salesforce, AWS, React and more."
   },
   {
     icon: <BadgeCheck className="size-6 text-blue-600" />,
-    title: "Proven Expertise",
-    desc: "Our certified experts bring deep knowledge in Salesforce, AWS, Power Platform, and modern web to solve complex challenges."
+    title: "Real Knowledge, Shared Openly",
+    desc: "What we learn, we explain — through content, discussions and interview-prep series, not gatekept behind paywalls."
   },
   {
     icon: <Users className="size-6 text-blue-600" />,
-    title: "Client-Centric Approach",
-    desc: "We prioritize transparency and measurable outcomes—working with you, not just for you, ensuring long-term success."
+    title: "Community, Not Just Consumers",
+    desc: "We grow together — asking questions, sharing projects, and helping each other get better at technology."
   },
 ]
 
@@ -39,11 +39,11 @@ export function WhyChooseUs({ extended = false }: { extended?: boolean }) {
 
   return (
     <section ref={ref} className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Choose <span className="text-blue-600">Nimbo<span className="text-blue-600">Nexus</span></span></h2>
+      <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Join <span className="text-blue-600">Nimbo<span className="text-blue-600">Nexus</span></span></h2>
       
       {extended && (
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto text-center">
-          Business Optimization, Stakeholder Engagement, and Digital Transformation are at the heart of our delivery.
+          Learning, collaboration, and real project work are at the heart of everything we do.
         </p>
       )}
 

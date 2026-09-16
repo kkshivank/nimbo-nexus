@@ -106,9 +106,9 @@ export default function HomePage() {
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
           Let’s{" "}
           <span className="text-blue-600">
-            Build Something
+            Learn & Build
           </span>{" "}
-          Great Together
+          Together
         </h2>
 
         <p className="mt-2 text-gray-600 max-w-xl mx-auto">
@@ -121,14 +121,14 @@ export default function HomePage() {
             href="/services"
             className="px-5 py-2.5 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
           >
-            View Services
+            Explore Projects
           </Link>
 
           <Link
             href="/contact"
             className="px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition"
           >
-            Contact Us
+            Get Involved
           </Link>
 
         </div>
