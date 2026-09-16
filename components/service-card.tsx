@@ -66,7 +66,7 @@ export default function ServiceCard({
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 via-cyan-50/0 to-blue-50/0 group-hover:from-blue-50/40 group-hover:via-cyan-50/20 group-hover:to-blue-50/40 transition-all duration-500 pointer-events-none" />
       
-      <div className="relative p-5">
+      <div className="relative p-5 pb-6">
         {/* Image Container */}
         <div className="aspect-[16/9] overflow-hidden rounded-xl bg-gray-100 ring-1 ring-gray-200/50">
           <img
@@ -77,31 +77,13 @@ export default function ServiceCard({
         </div>
 
         {/* Content */}
-        <div className="mt-5 space-y-2">
+        <div className="mt-5 space-y-2.5">
           <h4 className="text-lg font-bold text-gray-900 leading-snug line-clamp-2 min-h-[3.25rem] group-hover:text-blue-700 transition-colors duration-300">
             {title}
           </h4>
           <p className="text-sm text-gray-600 leading-relaxed line-clamp-2 min-h-[2.85rem]">
             {description}
           </p>
-        </div>
-
-        {/* Hover indicator */}
-        <div className="mt-4 flex items-center gap-2 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {/* <span className="text-sm font-medium">Learn more</span> */}
-          {/* <svg
-            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg> */}
         </div>
       </div>
 
