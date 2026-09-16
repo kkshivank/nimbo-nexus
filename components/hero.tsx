@@ -30,13 +30,12 @@ export function Hero() {
           className="lg:text-left text-center"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-blue-400 via-sky-300 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
-            Elevating Visions with <br className="hidden md:block" /> Cutting-Edge Digital Craft
+            A Community for People Who <br className="hidden md:block" /> Learn, Build & Explore Technology
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl lg:ml-0 mx-auto font-light">
-            <span className="text-sky-300 font-medium">Architecting Tomorrow's Solutions Today.</span>
-            <br />
-            Strategy • Development • Transformation
+            Learn, build projects, share knowledge and connect with people across{" "}
+            <span className="text-sky-300 font-medium">Salesforce, DevOps, React, AI and Cloud</span>.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-5">
@@ -45,7 +44,7 @@ export function Hero() {
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-700 hover:to-purple-800 text-white font-semibold text-base py-3 px-8 rounded-full shadow-xl shadow-blue-500/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             >
-              <Link href="/services">Discover Our Expertise</Link>
+              <Link href="/about">Explore the Community</Link>
             </Button>
             <Button
               asChild
@@ -53,7 +52,7 @@ export function Hero() {
               variant="outline"
               className="border-2 border-sky-400 text-sky-300 hover:text-sky-300 bg-transparent hover:bg-transparent font-semibold text-base py-3 px-8 rounded-full shadow-lg shadow-sky-500/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             >
-              <Link href="/contact">Connect With Us</Link>
+              <Link href="/services">Explore Projects</Link>
             </Button>
           </div>
         </motion.div>

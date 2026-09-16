@@ -18,24 +18,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nimbonexus.com"),
 
   title: {
-    default: "NimboNexus | Salesforce, AI & Digital Solutions",
+    default: "NimboNexus | Technology Community for Learners & Builders",
     template: "%s | NimboNexus",
   },
 
   description:
-    "NimboNexus delivers Salesforce consulting, AI solutions, cloud transformation, React development, Microsoft Power Platform and enterprise digital services.",
+    "NimboNexus is a technology community where learners, developers and builders explore Salesforce, DevOps, React, AI and Cloud through learning, projects and collaboration.",
 
   keywords: [
     "NimboNexus",
-    "Salesforce",
-    "Salesforce Consulting",
-    "Salesforce Development",
-    "AI Solutions",
-    "Cloud Services",
+    "Technology Community",
+    "Salesforce Community",
+    "Salesforce Learning",
+    "DevOps",
     "React Development",
+    "AI/ML",
+    "Cloud Computing",
+    "Tech Learning Community",
     "Web Development",
-    "Microsoft Power Platform",
-    "Digital Transformation",
   ],
 
   applicationName: "NimboNexus",
@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "NimboNexus | Salesforce, AI & Digital Solutions",
+    title: "NimboNexus | Technology Community for Learners & Builders",
 
     description:
-      "Salesforce consulting, AI solutions, cloud transformation and enterprise digital services.",
+      "A technology community where learners, developers and builders explore Salesforce, DevOps, React, AI and Cloud through learning, projects and collaboration.",
 
     url: "https://nimbonexus.com",
 
@@ -81,10 +81,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "NimboNexus | Salesforce, AI & Digital Solutions",
+    title: "NimboNexus | Technology Community for Learners & Builders",
 
     description:
-      "Salesforce consulting, AI solutions, cloud transformation and enterprise digital services.",
+      "A technology community where learners, developers and builders explore Salesforce, DevOps, React, AI and Cloud through learning, projects and collaboration.",
 
     images: ["/nimbo-logo.png"],
   },
