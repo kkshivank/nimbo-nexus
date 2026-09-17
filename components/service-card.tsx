@@ -61,7 +61,7 @@ export default function ServiceCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
-      className="group relative flex-none w-80 sm:w-96 snap-start rounded-2xl border border-gray-200/80 bg-white shadow-md hover:shadow-2xl hover:border-blue-200 transition-all duration-500 overflow-hidden"
+      className="group relative flex-none w-80 sm:w-96 snap-start rounded-2xl border border-gray-200/80 bg-white hover:shadow-2xl hover:border-blue-200 transition-all duration-500 overflow-hidden"
     >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 via-cyan-50/0 to-blue-50/0 group-hover:from-blue-50/40 group-hover:via-cyan-50/20 group-hover:to-blue-50/40 transition-all duration-500 pointer-events-none" />
