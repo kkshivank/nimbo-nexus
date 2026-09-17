@@ -66,7 +66,7 @@ export default function ServiceCard({
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 via-cyan-50/0 to-blue-50/0 group-hover:from-blue-50/40 group-hover:via-cyan-50/20 group-hover:to-blue-50/40 transition-all duration-500 pointer-events-none" />
       
-      <div className="relative p-5 pb-6">
+      <div className="relative p-5">
         {/* Image Container */}
         <div className="aspect-[16/9] overflow-hidden rounded-xl bg-gray-100 ring-1 ring-gray-200/50">
           <img
