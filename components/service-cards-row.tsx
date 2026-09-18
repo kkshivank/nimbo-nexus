@@ -46,7 +46,7 @@ export default function ServiceCardsRow({ cards }: Props) {
       {/* Carousel viewport */}
       <div className="overflow-hidden" ref={emblaRef}>
         {/* Track */}
-        <div className="flex gap-6 px-2">
+        <div className="flex gap-6 px-2 py-1.5">
           {cards.map((card, index) => (
             <div key={card.title} className="flex-[0_0_300px]">
               <ServiceCard {...card} index={index} />
